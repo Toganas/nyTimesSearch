@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <!-- bootstrap -->
+    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"> -->
+        <link rel="stylesheet" href="bootstrap.min.css">
+</head>
+
+<body>
+    <!-- top logo -->
+    <div class="container text-center h3 bg-primary text-white pt-5 pb-5">
+        NY Times Search
+    </div>
+
+    <!--form for search  -->
+    <div class="container border">
+        <span class="navbar navbar-nav bg-secondary text-white">
+            <div class="col-md-12 margin-left-0 margin-right-0 padding-left-0 padding-right-0">
+                Search Parameters
+            </div>
+        </span>
+        <div class="row">
+            <div class="col-md-12">
+
+                <div class="form-group">
+                    <label for="exampleFormControlInput1">Search Term</label>
+                    <input type="textbox" class="form-control" id="search">
+                </div>
+                <div class="form-group">
+                    <label for="exampleFormControlSelect1">Number of Records to Retrieve</label>
+                    <select class="form-control" id="number">
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5</option>
+                        <option>6</option>
+                        <option>7</option>
+                        <option>8</option>
+                        <option>9</option>
+                        <option>10</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="exampleFormControlInput1">Start Year (Optional):</label>
+                    <input type="textbox" class="form-control" id="startYear">
+                </div>
+
+                <div class="form-group">
+
+                    <label for="exampleFormControlInput1">End Year (Optional):</label>
+                    <input type="email" class="form-control" id="endYear">
+
+                </div>
+                <button type="button" class="btn btn-secondary mb-3" id="searchButton">Search</button>
+                <button type="button" class="btn btn-secondary mb-3" id="clearResults">Clear Results</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- Article return -->
+    <div class="container border mt-4">
+        <div class="nav border-bottom">
+            Top Articles
+        </div>
+        <div class="row">
+            <div class="form-group" id="articles">
+                <label for="exampleFormControlInput1"></label>
+              </div>
+            
+        </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="app.js"></script>
+
+</body>
+
+</html>
